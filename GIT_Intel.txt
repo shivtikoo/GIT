@@ -1,0 +1,165 @@
+This is version 01 of my commit.
+Am not gonna put you into staging area yet.
+Operations available are;
+
+git clone url "filename"
+	to copy an online repository to our lappie
+		shift+insert se paste
+
+git status
+
+git init [i	nitialisation]{untracked]
+
+git  add --a/ git add filename w extension [ adding to the staging state]
+	{unmodified}->{modified}[all in all everything is tracked]
+
+git commit -m "whatever I want to write"
+
+git log
+
+rm -rf.git (clears out the repository itself)
+
+pwd 
+	[present working directory]
+
+ls 
+	[Lists the content in whichever folder we are]
+
+touch error.log
+	{Touch command
+	Creating new file, named error.log}
+	{Ignoring that file, create another file .gitignore}
+
+touch .gitignore
+	[open this file then add the file that needs to be ignored in it]
+		//Now to ignore all files with a certain extension, simply do {*.log}
+		asterisk is simply acting as for all.
+	{Now to ignore the whole folder as a whole just add it into gitignore; {foldername/}
+		//If there is like a nested folder with the same name and we dont want to 				ignore it we simply;  {/foldername/} putting a backslash in front of it, doesn't 			ignore the nested folders.
+
+git diff
+	difference between working directory and staging area file.
+		{green color staging area, red color working directory}
+
+git diff --staged
+	gives the difference between stages of operations taking placed
+
+git commit -a -m "Direct COmmit"
+	Skipping the staging area
+		Agar untracked hai toh nahi chalega
+
+git rm filename
+	removes the file named
+
+git mv filenameoriginal filenamenew
+	allows us to renmae files
+
+Press Q to get out of log
+
+git rm --cached filename
+	This untracks the file that you wanted to be ignored but was still getting tracked
+		{SO If a file is getting tracked n then you put it ib git ignore, it still gets 					tracked  }
+
+git log -p 
+	Simply gives the git diff
+		{if you add on something like 'git log -p -3', toh gives last 3 commits mai kya diff 		aaya basically}
+
+git log --stat 
+	simply gives the easier/ compact version of git log -p
+
+git log --pretty=oneline
+	gives all commits made in one line, so more compact version git log -p
+
+git log --pretty=short(sirf author)
+
+git log --pretty=full(author aur commiter bhi)
+	author jo file banata hai n jo change karta uss file mai commiter
+
+git log --since=2.days
+	log for past two days
+
+git log --pretty="%h--%an"
+	{"an" stands for author name and "ae" stands for author email and "ai" author date}
+
+git commit --amend
+	Putting last two commits together
+	{opens vim editor
+		i dabakar edit
+		esc dabaana toh can type
+			press :wq toh will leave that shit
+
+git restore --staged filename
+	getting a staged file to unstaged
+
+git checkout -- filename
+	{If you made an error in the new shit of somethign n yu want the previously commited piece} Basically helps you restor the last working piece of your project
+		[Doesn't work if you've like already cpmmitted yoyur file]
+
+git checkout -f
+	{Har jagah jahan chnages vahan ka previous shit set in vaapis se}
+
+git remote
+	remote ek website jo web par hai
+		when you run this command it'll give you whatever remote file you might've 				made
+
+git remote -v
+	tells whatever we've kept as location for pushing n pulling
+
+So, for pushing need to make key
+
+ssh-keygen -t ed25519 -C "shiivvv.0023@gmail.com"
+		making key
+
+eval "$(ssh-agent -s)"
+		check key status
+
+ ssh-add ~/.ssh/id_ed25519
+		add key
+
+$ tail ~/.ssh/id_ed25519.pub
+		whatever this gives post it into repository
+
+git push -u origin master
+	TO PUSH
+		WHAT WOULDN'T HAVE WORKED EARLIER
+
+ALIAS
+ git config --global alias.st status
+
+to check what branches we've made, simply run the operation 
+git branch
+		[gives us the list of branches we've made]
+git branch -v 
+		[give sthe last commit too]
+
+git merge
+	to merge
+
+git branch --merged
+		SHows all branches that are not branched
+
+git branch --no-merged
+		not already branched
+
+MErge Conflictz
+
+git add is also used to mark m,erge conflicts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
