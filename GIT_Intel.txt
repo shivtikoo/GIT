@@ -165,6 +165,11 @@ LONG RUNNING BRANCHES, TOPIC BRANCHES
 
 Long running as the name suggests; runs for a long time. topic branches on the other hand re short lived branches.
 
+ADDING BRANCHES TO THE REPOSITORY
+git push origin branchname
+
+
+
 
 
 
