@@ -145,6 +145,17 @@ MErge Conflictz
 
 git add is also used to mark m,erge conflicts
 
+deleting branches
+
+git branch -d branchname
+		if not merged gives warning before deleting
+	change the lowercase d to capital D, that removes the error
+
+LONG RUNNING BRANCHES, TOPIC BRANCHES
+
+Long running as the name suggests; runs for a long time. topic branches on the other hand re short lived branches.
+
+
 
 
 
