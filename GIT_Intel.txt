@@ -96,7 +96,10 @@ git checkout -- filename
 		[Doesn't work if you've like already cpmmitted yoyur file]
 
 git checkout -f
-	{Har jagah jahan chnages vahan ka previous shit set in vaapis se}
+	{Har jagah jahan changes vahan ka previous shit set in vaapis se}
+
+git checkout -b 'branchname'
+	[creates new branch]
 
 git remote
 	remote ek website jo web par hai
@@ -104,6 +107,13 @@ git remote
 
 git remote -v
 	tells whatever we've kept as location for pushing n pulling
+
+PUSHING 
+git remote add origin https://github.com/shivtikoo/GIT.git
+
+git push -u source master
+
+
 
 So, for pushing need to make key
 
